@@ -1,6 +1,6 @@
 #Buralara əl dəymə...
 #Deploy butonuna bas deploy elə.
-#Rəsmi Kanal t.me/Botsinator 
+#Rəsmi Kanal t.me/yarasammc
 
 import os, youtube_dl, requests, time
 from config import Config
@@ -33,10 +33,10 @@ def start(client, message):
         quote=False,
         reply_markup=InlineKeyboardMarkup(
             [[
-                    InlineKeyboardButton('Rəsmi Kanal ✅', url='https://t.me/Botsinator'),
-                    InlineKeyboardButton('Playlist 🎵', url=f'https://t.me/{Config.PLAYLIST_NAME}')
+                    InlineKeyboardButton('Rəsmi Kanal ✅', url='https://t.me/YARASAmmc'),
+                    InlineKeyboardButton('Support👨‍🔧', url=f'https://t.me/BotssSupport')
                   ],[
-                    InlineKeyboardButton('Sahib 👨🏻‍💻', url=f'T.me/{Config.BOT_OWNER}')
+                    InlineKeyboardButton('Sahib 👨🏻‍💻', url=f'T.me/XTQ_BAKAVOY')
                 ]
             ]
         )
@@ -52,10 +52,10 @@ def help(client, message):
         quote=False,
         reply_markup=InlineKeyboardMarkup(
             [[
-                    InlineKeyboardButton('Rəsmi Kanal ✅', url='https://t.me/Botsinator'),
-                    InlineKeyboardButton('Playlist 🎵', url=f'https://t.me/{Config.PLAYLIST_NAME}')
+                    InlineKeyboardButton('Rəsmi Kanal ✅', url='https://t.me/YARASAmmc'),
+                    InlineKeyboardButton('Support 👨‍🔧', url=f'https://t.me/BotssSupport')
                   ],[
-                    InlineKeyboardButton('Sahib 👨🏻‍💻', url=f'T.me/{Config.BOT_OWNER}')
+                    InlineKeyboardButton('Sahib 👨🏻‍💻', url=f'T.me/XTQ_BAKAVOY')
                 ]
             ]
         )
@@ -116,7 +116,7 @@ def a(client, message):
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
             secmul *= 60
-        message.reply_audio(audio_file, caption=rep, parse_mode='md',quote=False, title=title, duration=dur, thumb=thumb_name, performer="@Botsinator")
+        message.reply_audio(audio_file, caption=rep, parse_mode='md',quote=False, title=title, duration=dur, thumb=thumb_name, performer="@YARASAmmc")
         m.delete()
         bot.send_audio(chat_id=Config.PLAYLIST_ID, audio=audio_file, caption=rep, performer="@Botsinator", parse_mode='md', title=title, duration=dur, thumb=thumb_name)
     except Exception as e:
